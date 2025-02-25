@@ -3,7 +3,7 @@
 	"icon": "/images/logo.png",
 	"displayName": "Text2SmallText",
 	"description": "A String to SmallText converter for Minecraft Servers or other purposes.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "itscactusdev",
 	"repository": {
 		"type": "git",
