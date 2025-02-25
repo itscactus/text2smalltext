@@ -13,13 +13,16 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "text2smalltext.convert",
-      "title": "Convert file to SmallText"
-    },{
-      "command": "text2smalltext.convertSelected",
-      "title": "Convert selected text to SmallText"
-    }]
+    "commands": [
+      {
+        "command": "text2smalltext.convert",
+        "title": "Convert file to SmallText"
+      },
+      {
+        "command": "text2smalltext.convertSelected",
+        "title": "Convert selected text to SmallText"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
@@ -27,11 +30,14 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.97.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
-    "eslint": "^9.19.0",
+    "@types/vscode": "^1.97.0",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.19.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
   }
 }
