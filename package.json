@@ -1,47 +1,59 @@
 {
-  "name": "text2smalltext",
-  "displayName": "Text2SmallText",
-  "description": "A String to SmallText converter for Minecraft Servers or other purposes.",
-  "version": "0.0.2",
-  "publisher": "itscactusdev",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/itscactus/text2smalltext"
-  },
-  "engines": {
-    "vscode": "^1.97.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [],
-  "main": "./extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "text2smalltext.convert",
-        "title": "Convert file to SmallText"
-      },
-      {
-        "command": "text2smalltext.convertSelected",
-        "title": "Convert selected text to SmallText"
-      }
-    ]
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
-    "@types/vscode": "^1.97.0",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1",
-    "eslint": "^9.19.0"
-  },
-  "dependencies": {
-    "js-yaml": "^4.1.0"
-  }
+	"name": "text2smalltext",
+	"displayName": "Text2SmallText",
+	"description": "A String to SmallText converter for Minecraft Servers or other purposes.",
+	"version": "0.0.2",
+	"publisher": "itscactusdev",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/itscactus/text2smalltext"
+	},
+	"engines": {
+		"vscode": "^1.97.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "text2smalltext.convert",
+				"title": "Convert file to SmallText"
+			},
+			{
+				"command": "text2smalltext.convertSelected",
+				"title": "Convert selected text to SmallText"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "text2smalltext.convert",
+				"key": "ctrl+alt+l",
+				"mac": "shift+cmd+f"
+			},
+			{
+				"command": "text2smalltext.convertSelected",
+				"key": "ctrl+alt+F",
+				"mac": "shift+cmd+l"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^10.0.10",
+		"@types/node": "20.x",
+		"@types/vscode": "^1.97.0",
+		"@vscode/test-cli": "^0.0.10",
+		"@vscode/test-electron": "^2.4.1",
+		"eslint": "^9.19.0"
+	},
+	"dependencies": {
+		"js-yaml": "^4.1.0"
+	}
 }
