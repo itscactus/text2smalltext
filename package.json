@@ -1,5 +1,6 @@
 {
 	"name": "text2smalltext",
+	"icon": "/images/logo.png",
 	"displayName": "Text2SmallText",
 	"description": "A String to SmallText converter for Minecraft Servers or other purposes.",
 	"version": "0.0.2",
@@ -31,12 +32,14 @@
 			{
 				"command": "text2smalltext.convert",
 				"key": "ctrl+alt+l",
-				"mac": "shift+cmd+f"
+				"mac": "shift+cmd+f",
+				"linux": "shift+ctrl+f"
 			},
 			{
 				"command": "text2smalltext.convertSelected",
 				"key": "ctrl+alt+F",
-				"mac": "shift+cmd+l"
+				"mac": "shift+cmd+l",
+				"linux": "shift+ctrl+l"
 			}
 		]
 	},
