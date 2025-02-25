@@ -2,8 +2,12 @@
   "name": "text2smalltext",
   "displayName": "Text2SmallText",
   "description": "A String to SmallText converter for Minecraft Servers or other purposes.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "itscactusdev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itscactus/text2smalltext"
+  },
   "engines": {
     "vscode": "^1.97.0"
   },
